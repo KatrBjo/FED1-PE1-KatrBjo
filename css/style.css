@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+:root {
+    --blue: #76CFD7;
+    --white: #ffffff;
+    --black: #000000;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "crimson text";
+}
+
+.text-box{
+    color: var(--blue);
+    display: flex;
+}
+.text-box strong{
+    color: var(--black);
+}
+.text-box h1{
+    font-size: 150px;
+}
+@media(max-width: 1300px){
+    .text-box h1{
+        font-size: 100px;
+    }
+}
+@media(max-width: 900px){
+    .text-box h1{
+        font-size: 60px;
+    }
+}

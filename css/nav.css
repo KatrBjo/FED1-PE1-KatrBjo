@@ -1,0 +1,132 @@
+:root {
+    --blue: #76CFD7;
+    --white: #ffffff;
+    --black: #000000;
+    --blueblur: #76cfd747;
+  }
+
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    z-index: 100;
+    background: var(--white);
+}
+.nav-logo p{
+    font-size: 60px;
+    font-weight: 800;
+}
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+    list-style-type: none;
+}
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--black);
+    margin: 0 5px;
+}
+.link:hover, active{
+    border-bottom: 2px solid --blue;
+}
+.nav-button .btn{
+    width: 60px;
+    height: 30px;
+    font-weight: 600;
+    background: var(--black);
+    border-radius: 10px;
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    transition: .3 ease;
+}
+/* #registerBtn{
+    margin-left: 15px;
+} */
+/* .btn.whiteBtn{
+    background: white;
+} */
+.btn:hover{
+    background: var(--blue);
+    color: var(--black);
+}
+.btn:active{
+    color: var(--white);
+}
+.nav-menu-btn{
+    display: none;
+}
+
+@media only screen and (max-width: 786px){
+    .nav-logo p{
+        font-size: 30px;
+    }
+    /* .nav-button{
+        display: none;
+    } */
+    .nav-menu.responsive{
+        top: 60px;
+    }
+    .nav-menu{
+        position: absolute;
+        top: -900px;
+        display: flex;
+        justify-content: center;
+        background-color: var(--blueblur);
+        width: 100%;
+        height: 100vh;
+        backdrop-filter: blur(30px);
+    }
+    .nav-menu ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-menu ul li{
+        font-size: 20px;
+    }
+    .nav-menu-btn{
+        display: block;
+    }
+    .nav-menu-btn i{
+        font-size: 25px;
+        color: var(--white);
+        background-color: var(--black);
+        padding: 2px;
+        margin: 18px 0 0 0;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .1s;
+    }
+    .nav-menu-btn i:hover{
+        background-color: var(--blue);
+    }
+    .nav-menu-btn i:active{
+        background-color: var(--black);
+    }
+}
+@media only screen and (max-width: 540px){
+    .wrapper{
+        min-height: 100vh;
+
+    }
+    .register-container .login-container{
+        padding: 0 20px;
+    }
+    .register-container .two-forms{
+        flex-direction: column;
+        gap: 0;
+    }
+}
