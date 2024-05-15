@@ -15,7 +15,6 @@
     background: var(--blue);
     border-radius: 10px;
     padding: 30px;
-    margin: 70px;
 }
 
 .top span{
@@ -45,7 +44,7 @@ header{
 .input-field{
     font-size: 15px;
     background: var(--white);
-    height: 30px;
+    height: 40px;
     width: 100%;
     padding: 0 20px 0 40px;
     border: none;
