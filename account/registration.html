@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="login.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>tech | login</title>
+    <title>tech | registration</title>
 </head>
 <body>
 <div class="wrapper">
@@ -32,41 +32,53 @@
         </div>
     </nav>
 
+
 <!-- From Box -->
 <div class="form-box">
-     <!-- login form -->
-     <div class="login-container" id="login">
-        <div class="top">
-            <span>don't have an account? <a href="registration.html">register</a></span>
-            <header>login</header>
-        </div>
-    
+ <!-- registration form -->
+ <div class="register-container" id="register">
+    <div class="top">
+        <span>already have an account? <a href="login.html">login</a></span>
+        <header>register</header>
+    </div>
+    <div class="two-forms">
         <div class="input-box">
-            <input type="text" class="input-field" placeholder="username or email">
+            <input type="text" class="input-field" placeholder="firstname">
             <i class="bx bx-user"></i>
         </div>
         <div class="input-box">
-            <input type="password" class="input-field" placeholder="password">
-            <i class="bx bx-lock"></i>
-        </div>
-        <div class="input-box">
-            <input type="submit" class="submit" value="login">
-        </div>
-        <div class="two-col">
-            <div class="one">
-                <input type="checkbox" id="login-check">
-                <label for="login-check">remember</label>
-            </div>
-            <div class="two">
-                <label><a href="#">forgot password?</a></label>
-            </div>
+            <input type="text" class="input-field" placeholder="lastname">
+            <i class="bx bx-user"></i>
         </div>
     </div>
-    <!-- login form end -->
+    <div class="input-box">
+        <input type="text" class="input-field" placeholder="email">
+        <i class="bx bx-envelope"></i>
+    </div>
+    <div class="input-box">
+        <input type="password" class="input-field" placeholder="password">
+        <i class="bx bx-lock"></i>
+    </div>
+    <div class="input-box">
+        <input type="submit" class="submit" value="register">
+    </div>
+    <div class="two-col">
+        <div class="one">
+            <input type="checkbox" id="register-check">
+            <label for="register-check">remember</label>
+        </div>
+        <div class="two">
+            <label><a href="#">terms & conditions</a></label>
+        </div>
+    </div>
+</div>
+<!-- registration form end -->
    
 </div>
 <!-- From Box End -->
+
 <script src="script.js"></script>
+
 </div>
 </body>
 </html>
