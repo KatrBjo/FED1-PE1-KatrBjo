@@ -82,7 +82,7 @@
     }
     .nav-menu{
         position: absolute;
-        top: -900px;
+        top: -1000px;
         display: flex;
         justify-content: center;
         background-color: var(--blueblur);
