@@ -74,9 +74,9 @@
     .nav-logo p{
         font-size: 30px;
     }
-    /* .nav-button{
+    .nav-button{
         display: none;
-    } */
+    }
     .nav-menu.responsive{
         top: 60px;
     }
