@@ -4,13 +4,14 @@
     --black: #000000;
     --lightblur: #d4eff2e7;
   }
+  .wrapper{
+    height: 100%;
+  }
 .form-box{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    display: block;
     width: 400px;
-    height: 440px; 
+    height: fit-content; 
     z-index: 2;
     background: var(--blue);
     border-radius: 10px;
